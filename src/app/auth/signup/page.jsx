@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SignUp() {
     return (
         <div className="sign-in">
@@ -10,7 +12,7 @@ export default function SignUp() {
                     <input type="text" />
                     <input type="text" />
                     <input type="text" />
-                    <p>Already on LauTalk? <NavLink to="/login">Login</NavLink></p>
+                    <p>Already on LauTalk? <Link href="/auth/login">Login</Link></p>
                     <button>Sign Up Now!!!</button>
                 </form>
             </div>
