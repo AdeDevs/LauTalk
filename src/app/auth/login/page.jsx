@@ -9,7 +9,7 @@ export default function LogIn() {
                 <img className="crsr" src="/assets/cursor.png" alt="image" />
             </div>
             <div className="sign-in-txt">
-                <h1>Sign Up</h1>
+                <h1>Login</h1>
                 <form>
                     <input type="text" placeholder="Full Name"/>
                     <input type="email" placeholder="School Email"/>
