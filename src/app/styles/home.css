@@ -1,0 +1,485 @@
+.home {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: var(--mainFont);
+}
+
+/* styling for the hero section starts here */
+
+.home .hero {
+    background-color: var(--bgColor);
+    color: #fff;
+    padding: 45px 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hero .hero-text {
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 120%;
+}
+
+.colored {
+    color: var(--accentColor);
+}
+
+.hero-text h1 em {
+    text-decoration: underline;
+    text-underline-offset: 0px;
+    text-decoration-thickness: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 50px 0 0 0;
+    width: 100%;
+    font-weight: 500;
+}
+
+#simple {
+    margin: 30px 0 50px 0;
+}
+
+.hero-text .hero-srch {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+}
+
+.hero-srch input {
+    background-image: url(/assets/search.png);
+    background-position: right 15px center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border: 2px solid #3ec2d384;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    padding: 15px 40px 15px 15px;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+
+.hero-srch input:hover,
+.hero-srch input:focus {
+    border: 2px solid var(--accentColor);
+}
+
+.hero-srch button,
+.nwsltr-txt form button {
+    padding: 15px 25px;
+    background-color: var(--accentColor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    border: 2px solid transparent;
+    font-weight: 500;
+}
+
+.hero-srch button:hover,
+.nwsltr-txt form button:hover {
+    background-color: transparent;
+    color: var(--accentColor);
+    border-color: var(--accentColor);
+}
+
+.hero .hero-bg {
+    background-image: url(/assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 4px var(--accentColor);
+    border-radius: 5px;
+    min-height: 500px;
+}
+
+/* styling for the hero section ends here */
+
+/* styling for the .for section starts here */
+.home-main .for {
+    background-color: #fff;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    overflow: hidden;
+    color: var(--bgColor);
+}
+
+.for h1 {
+    font-size: 4vw;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.for p {
+    font-size: 16px;
+    color: var(--accentColor);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.for button {
+    background-color: var(--accentColor);
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.for button:hover {
+    background-color: transparent;
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+}
+
+.for img {
+    width: 21vw;
+    position: absolute;
+}
+
+.msg-img {
+    top: 2vw;
+    left: -10vw;
+}
+
+.phn-img {
+    bottom: -8vw;
+    right: -8vw;
+}
+
+/* styling for the .for section starts here */
+
+/* styling for the marketplace preview section starts here */
+.home-main .mrkt {
+    background-color: #f7ede2;
+    padding: 40px 35px;
+    box-sizing: border-box;
+}
+
+.mrkt h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bgColor);
+}
+
+.mrkt h1 a {
+    text-underline-offset: 1px;
+}
+
+.mrkt h1 a:hover {
+    text-underline-offset: 3px;
+    color: var(--accentColor);
+}
+
+.mrkt .mrkt-items {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 30px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.mrkt-items img {
+    width: 25vw;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-shadow: 4px 4px 3px #b4b4b4;
+}
+
+.mrkt-items a {
+    text-decoration: 1px underline transparent;
+    text-underline-offset: 1px;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--accentColor);
+}
+
+.mrkt-items a:hover {
+    text-decoration: 2px underline var(--accentColor);
+    text-underline-offset: 3px;
+}
+
+/* styling for the marketplace preview section starts here */
+
+/* styling for the newsletter section starts here */
+.home-main .nwsltr {
+    background-color: var(--bgColor);
+    color: #fff;
+    padding: 70px 35px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+}
+
+.nwsltr-txt h1 {
+    font-size: 2.7em;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.nwsltr-txt p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.nwsltr-txt form {
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+    gap: 7px;
+}
+
+.nwsltr-txt form input {
+    width: 100%;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 15px 15px;
+}
+
+.nwsltr-bg {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.nwsltr-bg img {
+    height: 20vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* styling for the newsletter section ends here */
+
+/* styling for the footer section ends here */
+.footer-nav {
+    background-color: #fff;
+    padding: 50px 35px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav .socials {
+    gap: 7px;
+}
+
+.socials li {
+    display: flex;
+}
+
+.socials li img {
+    width: 30px;
+}
+
+.footer-nav .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links ul {
+    gap: 8px;
+}
+
+.links li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bgColor);
+    text-underline-offset: 0px;
+    text-decoration: 2px underline transparent;
+}
+
+.links li a:hover {
+    color: var(--accentColor);
+    text-underline-offset: 3px;
+    text-decoration: 2px underline var(--accentColor);
+    text-decoration-thickness: 2px;
+}
+
+.links .hdr {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accentColor);
+}
+
+.home-footer p {
+    font-size: 13px;
+    padding: 20px;
+    text-align: center;
+    color: var(--accentColor);
+}
+
+@media screen and (max-width: 850px) {
+    .home .hero {
+        padding: 45px 25px;
+    }
+
+    .home-main .mrkt {
+        padding: 40px 25px;
+    }
+
+    .mrkt-items img {
+        width: 35vw;
+    }
+
+    .home-main .nwsltr {
+        padding: 60px 25px;
+    }
+
+    .nwsltr-txt h1 {
+        font-size: 2.5em;
+    }
+
+    .nwsltr-txt form {
+        width: 100%;
+    }
+
+    .footer-nav {
+        padding: 50px 25px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .home .hero {
+        padding: 40px 15px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero .hero-text {
+        padding: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 10vw;
+    }
+
+    .hero .hero-bg {
+        grid-row: 1/2;
+        min-height: 40vh;
+        height: 80vw;
+    }
+
+    .for h1 {
+        font-size: 28px;
+    }
+
+    .for img {
+        width: 24vw;
+    }
+
+    .msg-img {
+        top: 1vw;
+        left: -13vw;
+    }
+
+    .for .phn-img {
+        width: 30vw;
+        bottom: -8vw;
+        right: -11vw;
+    }
+
+    .home-main .mrkt {
+        padding: 40px 15px;
+    }
+
+    .mrkt h1 {
+        font-size: 17px;
+    }
+
+    .mrkt .mrkt-items {
+        gap: 20px;
+    }
+
+    .home-main .nwsltr {
+        padding: 60px 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .nwsltr-txt h1 {
+        font-size: 2.3em;
+    }
+
+    .nwsltr-bg {
+        display: none;
+    }
+
+    .footer-nav {
+        padding: 40px 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-srch button,
+.nwsltr-txt form button {
+    padding: 10px;
+    font-size: 12px;
+}
+    .footer-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-nav .socials {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .socials li img {
+        width: 25px;
+    }
+
+    .socials li:nth-child(1) img {
+        width: 20px;
+    }
+
+    .footer-nav .links {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .links li a {
+        font-size: 12px;
+    }
+
+    .links .hdr {
+        font-size: 16px;
+    }
+    .home-footer p {
+        font-size: 10px;
+        padding: 15px;
+    }
+}
