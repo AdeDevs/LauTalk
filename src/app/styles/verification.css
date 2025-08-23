@@ -33,14 +33,14 @@
     width: 25vw;
     position: absolute;
     left: 0;
-    bottom: -7vw;
+    bottom: -8vw;
     z-index: 700;
 }
 .sign-in-bg .crsr {
     width: 35vw;
     position: absolute;
     right: -5vw;
-    bottom: -20vw;
+    bottom: -22vw;
     z-index: 700;
 }
 
