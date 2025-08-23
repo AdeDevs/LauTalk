@@ -98,7 +98,7 @@ a {
 .desk-nav a span,
 .mob-nav a span {
     display: inline-flex;
-    background-image: url(/create.png);
+    background-image: url(/assets/create.png);
     background-position: center;
     background-size: cover;
     padding: 7px;

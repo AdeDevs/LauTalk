@@ -19,7 +19,7 @@ export default function NavBar() {
     return (
         <div className="nav-bar">
             <nav className="navigation">
-                <img className="logo" src="/assets/lautalk.png" alt="logo" />
+                <Link href="/"><img className="logo" src="/assets/lautalk.png" alt="logo" /></Link>
                 <form>
                 <input type="text" placeholder="Want to make payment or purchase anything?"/>
                 <button id="srch-btn"></button>
