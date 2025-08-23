@@ -34,8 +34,8 @@ export default function NavBar() {
                 <ul className={`mob-nav ${isMenuActive ? "active" : ""}`}>
                     <li className="menu-btn mob-btn" onClick={toggleMenu}><ion-icon id="tog" name="close-outline" /></li>
                     <a  href="#" onClick={toggleMenu} id="crt-talks"> <span></span> create talks</a>
-                    <a href="/login" onClick={toggleMenu} >log in</a>
-                    <a href="/signup" onClick={toggleMenu} id="sign">sign up</a>
+                    <a href="/auth/login" onClick={toggleMenu} >log in</a>
+                    <a href="/auth/signup" onClick={toggleMenu} id="sign">sign up</a>
                 </ul>
             </nav>
         </div>
