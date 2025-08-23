@@ -3,14 +3,17 @@
     grid-template-columns: 1.3fr 2fr;
     gap: 10px;
     font-family: var(--mainFont);
-    overflow: hidden;
+    overflow: scroll;
+    height: calc(100vh - 95px);
 }
 
 .sign-in .sign-in-bg {
     background-color: var(--bgColor);
-    height: 90vh;
+    height: 100%;
     box-sizing: border-box;
     padding: 50px 50px;
+    overflow: clip;
+    overflow-x: visible;
     position: relative;
     color: #fff;
 }
@@ -59,7 +62,7 @@
     gap: 25px;
     margin: 0 auto;
     margin-top: 25px;
-    width: 70%;
+    width: 80%;
 }
 .sign-in-txt form input {
     padding: 17px 23px;
@@ -78,10 +81,14 @@
 .sign-in-txt form p a {
     color: var(--accentColor);
     font-weight: 500;
-    text-underline-offset: 0px;
+    text-underline-offset: 1px;
 }
 .sign-in-txt form p a:hover {
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
+}
+.fgt {
+    display: block;
+    text-align: left;
 }
 .sign-in-txt form button {
     padding: 17px 23px;
@@ -93,6 +100,11 @@
     font-weight: 600;
     font-size: 15px;
     border: 2px solid transparent;
+}
+.sign-in-txt form button:hover {
+    background-color: transparent;
+    color: var(--accentColor);
+    border-color: var(--accentColor);
 }
 
 @media screen and (max-width: 850px) {
