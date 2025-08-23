@@ -30,17 +30,17 @@
     font-weight: 400;
 }
 .sign-in-bg .girl {
-    width: 25vw;
+    width: 24vw;
     position: absolute;
     left: 0;
-    bottom: -8vw;
+    bottom: -9vw;
     z-index: 700;
 }
 .sign-in-bg .crsr {
-    width: 35vw;
+    width: 33vw;
     position: absolute;
     right: -5vw;
-    bottom: -22vw;
+    bottom: -20vw;
     z-index: 700;
 }
 
