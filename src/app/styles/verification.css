@@ -1,0 +1,131 @@
+.sign-in {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    gap: 10px;
+    font-family: var(--mainFont);
+    overflow: hidden;
+}
+
+.sign-in .sign-in-bg {
+    background-color: var(--bgColor);
+    height: 90vh;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    position: relative;
+    color: #fff;
+}
+
+.sign-in-bg h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: normal;
+}
+.sign-in-bg p {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.sign-in-bg .girl {
+    width: 28vw;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    z-index: 700;
+}
+.sign-in-bg .crsr {
+    width: 36vw;
+    position: absolute;
+    right: -5vw;
+    bottom: -20vw;
+    z-index: 700;
+}
+
+.sign-in .sign-in-txt {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sign-in-txt h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accentColor);
+}
+.sign-in-txt form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 70%;
+}
+.sign-in-txt form input {
+    padding: 17px 23px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: #d9d9d9;
+}
+.sign-in-txt form input:hover, .sign-in-txt form input:focus {
+    border-color: var(--accentColor);
+}
+.sign-in-txt form p {
+    font-size: 17px;
+}
+.sign-in-txt form p a {
+    color: var(--accentColor);
+    font-weight: 500;
+    text-underline-offset: 0px;
+}
+.sign-in-txt form p a:hover {
+    text-underline-offset: 3px;
+}
+.sign-in-txt form button {
+    padding: 17px 23px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--accentColor);
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid transparent;
+}
+
+@media screen and (max-width: 850px) {
+    .sign-in {
+        gap: 0;
+    }
+    .sign-in .sign-in-bg {
+        padding: 80px 30px;
+    }
+    .sign-in-bg h1 {
+        font-size: 3em;
+    }
+    .sign-in-bg .girl {
+        width: 35vw;
+        bottom: -30px;
+    }
+    .sign-in-bg .crsr {
+        width: 40vw;
+        right: -7vw;
+    }
+    .sign-in-txt form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sign-in {
+        grid-template-columns: 1fr;
+    }
+    .sign-in-bg {
+        display: none;
+    }
+    .sign-in .sign-in-txt {
+        padding: 50px 20px;
+    }
+}

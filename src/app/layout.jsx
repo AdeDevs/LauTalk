@@ -2,6 +2,7 @@ import NavBar from "./nav/page";
 import "./styles/reset.css"
 import "./styles/index.css"
 import "./styles/home.css"
+import "./styles/verification.css"
 
 export const metadata = {
   title: {
