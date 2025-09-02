@@ -6,13 +6,13 @@ import "./styles/verification.css"
 
 export const metadata = {
   title: {
-    default:"LauTalk",
-    template: "LauTalk"
+    default: "LauTalk Blog",
+    template: "LauTalk Landing Page",
+    description: "A platform for LAUTECH students to get together and socialize"
   },
   icons: {
     icon: "/assets/lautalk.png"
   },
-   description: "A platform for LAUTECH students to get together and socialize"
 }
 
 export default function RootLayout({ children }) {

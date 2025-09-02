@@ -45,7 +45,7 @@
 }
 
 .sign-in .sign-in-txt {
-    padding: 50px 50px;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,7 +247,7 @@
         display: none;
     }
     .sign-in .sign-in-txt {
-        padding: 50px 20px;
+        padding: 20px;
         min-height: calc(100vh - 74px);
         height: 100%;
     }
@@ -267,5 +267,16 @@
         font-size: 16px;
         height: 50px;
         width: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sign-in-txt form {
+        gap: 15px;
+    }
+    .code input {
+        font-size: 16px;
+        height: 40px;
+        width: 40px;
     }
 }

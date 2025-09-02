@@ -11,8 +11,7 @@ export default function LogIn() {
             <div className="sign-in-txt">
                 <h1>Login</h1>
                 <form>
-                    <input type="text" placeholder="Full Name"/>
-                    <input type="email" placeholder="School Email"/>
+                    <input type="email" placeholder="Username / Email"/>
                     <input type="password" placeholder="Password"/>
                     <p><Link className="fgt" href="#">Forgot Password?</Link></p>
                     <button>Log In</button>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 
 
-export default function SignUp({ length = 4, onComplete }) {
+export default function SignUp({ length = 6, onComplete }) {
     const [isPopup, setIsPopup] = useState(false)
     const handlePopup = () => {
         setIsPopup(!isPopup)
@@ -46,9 +46,10 @@ export default function SignUp({ length = 4, onComplete }) {
             <div className="sign-in-txt">
                 <h1>Sign Up</h1>
                 <form>
-                    <input type="text" placeholder="Full Name" required />
+                    <input type="text" placeholder="Display Name" required />
                     <input type="email" placeholder="School Email" required />
-                    <input type="tel" placeholder="Username or Matric No" required />
+                    <input type="tel" placeholder="Username" required />
+                    <input type="tel" placeholder="Matric No" required />
                     <input type="password" placeholder="Password" required />
                     <input type="password" placeholder="Confirm Password" required />
                     <p>Already on LauTalk? <Link href="/auth/login">Login</Link></p>

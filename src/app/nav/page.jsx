@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react"
+// import NewShit from "../../../../lt_dashboard/src/app/layout"
 
 export default function NavBar() {
     const [isMenuActive, setIsMenuActive] = useState(false)
@@ -19,7 +20,7 @@ export default function NavBar() {
     return (
         <div className="nav-bar">
             <nav className="navigation">
-                <Link href="/"><img className="logo" src="/assets/lautalk.png" alt="logo" /></Link>
+                <a href="/"><img className="logo" src="/assets/lautalk.png" alt="logo" /></a>
                 <form>
                 <input type="text" placeholder="Want to make payment or purchase anything?"/>
                 <button id="srch-btn"></button>
