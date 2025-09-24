@@ -24,10 +24,7 @@ export default function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
-      return;
-    }
+    
 
     setLoading(true);
     try {
@@ -46,6 +43,7 @@ export default function SignUp() {
             email: formData.email,
             password: formData.password,
             matricNo: formData.matricNo,
+            confirmPassword: formData.confirmPassword
           }),
         }
       );
