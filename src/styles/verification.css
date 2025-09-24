@@ -1,0 +1,282 @@
+.sign-in {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    gap: 10px;
+    font-family: var(--mainFont);
+    overflow: scroll;
+    position: relative;
+}
+
+.sign-in .sign-in-bg {
+    background-color: var(--bgColor);
+    min-height: calc(100vh - 95px);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    overflow: clip;
+    overflow-x: visible;
+    position: relative;
+    color: #fff;
+}
+
+.sign-in-bg h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: normal;
+}
+.sign-in-bg p {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.sign-in-bg .girl {
+    width: 24vw;
+    position: absolute;
+    left: 0;
+    bottom: -9vw;
+    z-index: 700;
+}
+.sign-in-bg .crsr {
+    width: 33vw;
+    position: absolute;
+    right: -5vw;
+    bottom: -20vw;
+    z-index: 700;
+}
+
+.sign-in .sign-in-txt {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sign-in-txt h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accentColor);
+}
+.sign-in-txt form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 80%;
+}
+.sign-in-txt form input {
+    padding: 17px 23px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: #d9d9d9;
+}
+.sign-in-txt form input:hover, .sign-in-txt form input:focus {
+    border-color: var(--accentColor);
+}
+.sign-in-txt form p {
+    font-size: 17px;
+}
+.sign-in-txt form p a {
+    color: var(--accentColor);
+    font-weight: 500;
+    text-underline-offset: 1px;
+}
+.sign-in-txt form p a:hover {
+    text-underline-offset: 4px;
+}
+.fgt {
+    display: block;
+    text-align: left;
+}
+.sign-in-txt form button {
+    padding: 17px 23px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--accentColor);
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid transparent;
+}
+.sign-in-txt form button:hover {
+    background-color: transparent;
+    color: var(--accentColor);
+    border-color: var(--accentColor);
+}
+
+.vrf-box {
+    position: absolute;
+    height: 100%;
+    background-color: #000000af;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 888;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.vrf-box.active {
+    opacity: 1;
+    visibility: visible;
+}
+.vrf-box .vrf-main {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #333;
+    box-sizing: border-box;
+}
+.vrf-main .back-btn {
+    padding: 30px 30px 0 30px;
+    text-align: left;
+    cursor: pointer;
+}
+.vrf-main h1 {
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+}
+.vrf-main p {
+    font-size: 14px;
+    text-align: center;
+}
+.vrf-main form {
+    text-align: center;
+}
+.code-entry {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 30px 15px;
+}
+.vrf-main .code {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.code input {
+    font-size: 20px;
+    font-family: inherit;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--accentColor);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+ .vrf-main .rtry {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.vrf-main .rsnd {
+    font-size: 15px;
+}
+.vrf-main .rsnd a {
+    color: var(--accentColor);
+    font-weight: 500;
+}
+.code-btns {
+    padding: 30px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.code-btns button, .code-btns .ver-btn:hover  {
+    padding: 15px 60px;
+    border: 1px solid var(--accentColor);
+    color: inherit;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.code-btns .ver-btn {
+    background-color: var(--accentColor);
+    color: #fff;
+}
+.code-btns button:hover {
+    background-color: var(--accentColor);
+    border-color: var(--bgColor);
+    color: #fff;
+}
+.code-btns .ver-btn:hover {
+    color: var(--accentColor);
+}
+
+
+@media screen and (max-width: 850px) {
+    .sign-in {
+        gap: 0;
+    }
+    .sign-in .sign-in-bg {
+        padding: 80px 30px;
+    }
+    .sign-in-bg h1 {
+        font-size: 3em;
+    }
+    .sign-in-bg .girl {
+        width: 35vw;
+        bottom: -30px;
+    }
+    .sign-in-bg .crsr {
+        width: 40vw;
+        right: -7vw;
+    }
+    .sign-in-txt form {
+        width: 100%;
+    }
+    .vrf-box .vrf-main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sign-in {
+        grid-template-columns: 1fr;
+    }
+    .sign-in-bg {
+        display: none;
+    }
+    .sign-in .sign-in-txt {
+        padding: 20px;
+        min-height: calc(100vh - 74px);
+        height: 100%;
+    }
+
+    .vrf-box .vrf-main {
+        width: 95%;
+    }
+    .code-btns button {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .vrf-main .back-btn {
+        padding: 20px 20px;
+        text-align: left;
+    }
+    .code input {
+        font-size: 16px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sign-in-txt form {
+        gap: 15px;
+    }
+    .code input {
+        font-size: 16px;
+        height: 40px;
+        width: 40px;
+    }
+}
