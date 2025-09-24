@@ -14,6 +14,7 @@ export default function LogIn() {
                     <input type="email" placeholder="Username / Email"/>
                     <input type="password" placeholder="Password"/>
                     <p><Link className="fgt" href="#">Forgot Password?</Link></p>
+                    
                     <button>Log In</button>
                     <p>Don't have an account? <Link href="/auth/signup">Sign Up Now!</Link></p>
                 </form>
